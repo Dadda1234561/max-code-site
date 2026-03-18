@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Max-Code — Telegram-боты, сайты и автоматизация для бизнеса в Ростове-на-Дону</title>
+    <meta name="description" content="Разработка Telegram-ботов, сайтов и AI-решений для бизнеса. Автоматизируем продажи, запись клиентов и коммуникации. Ростов-на-Дону.">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav" id="nav">
+    <div class="container nav__inner">
+        <a href="#" class="nav__logo">
+            <span class="nav__logo-bracket">&lt;</span>Max<span class="nav__logo-accent">Code</span><span class="nav__logo-bracket">/&gt;</span>
+        </a>
+        <ul class="nav__links">
+            <li><a href="#services">Услуги</a></li>
+            <li><a href="#portfolio">Кейсы</a></li>
+            <li><a href="#pricing">Тарифы</a></li>
+            <li><a href="#faq">FAQ</a></li>
+        </ul>
+        <a href="#contact" class="btn btn--accent btn--sm">Оставить заявку</a>
+        <button class="nav__burger" id="burger" aria-label="Меню">
+            <span></span><span></span><span></span>
+        </button>
+    </div>
+</nav>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+    <ul class="mobile-menu__links">
+        <li><a href="#services">Услуги</a></li>
+        <li><a href="#portfolio">Кейсы</a></li>
+        <li><a href="#pricing">Тарифы</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#contact" class="btn btn--accent btn--full">Оставить заявку</a></li>
+    </ul>
+</div>
+
+<!-- HERO -->
+<section class="hero" id="hero">
+    <div class="hero__blob hero__blob--1"></div>
+    <div class="hero__blob hero__blob--2"></div>
+    <div class="hero__blob hero__blob--3"></div>
+    <div class="container hero__inner">
+        <div class="hero__content">
+            <div class="hero__badge"><span class="hero__badge-dot"></span> Ростов-на-Дону</div>
+            <h1 class="hero__title">
+                Ваш бизнес на<br><span class="gradient-text">автопилоте</span>
+            </h1>
+            <p class="hero__subtitle">
+                Делаем Telegram-ботов, сайты и AI-решения за дни, а не месяцы.
+                Первые заявки — сразу после запуска.
+            </p>
+            <div class="hero__actions">
+                <a href="#contact" class="btn btn--accent btn--lg">Получить демо бесплатно</a>
+                <a href="#portfolio" class="btn btn--outline btn--lg">Смотреть кейсы</a>
+            </div>
+            <div class="hero__stats">
+                <div class="hero__stat">
+                    <span class="hero__stat-num"><span class="gradient-text" data-count="50">0</span><span class="hero__stat-plus gradient-text">+</span></span>
+                    <span class="hero__stat-label">Проектов запущено</span>
+                </div>
+                <div class="hero__stat">
+                    <span class="hero__stat-num"><span class="gradient-text" data-count="3">0</span></span>
+                    <span class="hero__stat-label">Дня — средний срок</span>
+                </div>
+                <div class="hero__stat">
+                    <span class="hero__stat-num"><span class="gradient-text" data-count="300">0</span><span class="hero__stat-plus gradient-text">%</span></span>
+                    <span class="hero__stat-label">Средний ROI клиентов</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero__demo">
+            <div class="phone-mock">
+                <div class="phone-mock__header">
+                    <div class="phone-mock__avatar">MC</div>
+                    <div>
+                        <div class="phone-mock__name">Max-Code Bot</div>
+                        <div class="phone-mock__status">онлайн</div>
+                    </div>
+                </div>
+                <div class="phone-mock__chat" id="demoChat">
+                    <div class="chat-bubble chat-bubble--bot">Привет! Я бот вашей кофейни. Чем помочь?</div>
+                    <div class="chat-bubble chat-bubble--user">Хочу заказать кофе</div>
+                    <div class="chat-bubble chat-bubble--bot">Отлично! Выберите напиток:</div>
+                    <div class="chat-bubble chat-bubble--buttons">
+                        <span class="chat-btn" data-reply="Капучино">☕ Капучино — 220 ₽</span>
+                        <span class="chat-btn" data-reply="Латте">🍵 Латте — 250 ₽</span>
+                        <span class="chat-btn" data-reply="Раф">🧋 Раф — 280 ₽</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SERVICES -->
+<section class="services" id="services">
+    <div class="container">
+        <div class="section-header fade-up">
+            <span class="section-tag section-tag--warm">Что мы делаем</span>
+            <h2 class="section-title">Услуги</h2>
+            <p class="section-desc">Полный цикл цифровых решений — от идеи до запуска за&nbsp;дни, а не месяцы</p>
+        </div>
+        <div class="services__grid">
+            <div class="service-card fade-up">
+                <span class="service-card__emoji">🤖</span>
+                <h3 class="service-card__title">Telegram-боты</h3>
+                <p class="service-card__text">Боты записи, заказов, воронки продаж, AI-консультанты. Работают 24/7 и экономят до 80% рутины.</p>
+                <ul class="service-card__tags">
+                    <li>Запись на услуги</li>
+                    <li>Приём заказов</li>
+                    <li>AI-чат-бот</li>
+                    <li>Воронка продаж</li>
+                </ul>
+                <span class="service-card__price">от 15 000 ₽</span>
+            </div>
+            <div class="service-card service-card--accent fade-up">
+                <div class="service-card__badge">Популярное</div>
+                <span class="service-card__emoji">🌐</span>
+                <h3 class="service-card__title">Сайты и лендинги</h3>
+                <p class="service-card__text">Продающие сайты с высокой конверсией. Делаем за 3-7 дней то, что студии делают за месяц.</p>
+                <ul class="service-card__tags">
+                    <li>Лендинг</li>
+                    <li>Сайт-каталог</li>
+                    <li>Интернет-магазин</li>
+                    <li>Mini App</li>
+                </ul>
+                <span class="service-card__price">от 20 000 ₽</span>
+            </div>
+            <div class="service-card fade-up">
+                <span class="service-card__emoji">⚡</span>
+                <h3 class="service-card__title">Автоматизация</h3>
+                <p class="service-card__text">Интеграции, парсеры, CRM-связки, рассылки. Убираем ручную работу из ваших процессов.</p>
+                <ul class="service-card__tags">
+                    <li>CRM-интеграция</li>
+                    <li>Парсинг данных</li>
+                    <li>Рассылки</li>
+                    <li>Аналитика</li>
+                </ul>
+                <span class="service-card__price">от 25 000 ₽</span>
+            </div>
+            <div class="service-card fade-up">
+                <span class="service-card__emoji">🧠</span>
+                <h3 class="service-card__title">AI-решения</h3>
+                <p class="service-card__text">Умные чат-боты, генерация контента, AI-ассистенты для вашей ниши. Будущее — уже сейчас.</p>
+                <ul class="service-card__tags">
+                    <li>AI-консультант</li>
+                    <li>Генерация контента</li>
+                    <li>Умный поиск</li>
+                    <li>Аналитика</li>
+                </ul>
+                <span class="service-card__price">от 40 000 ₽</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="steps">
+    <div class="container">
+        <div class="section-header fade-up">
+            <span class="section-tag section-tag--cool">Процесс</span>
+            <h2 class="section-title">Как мы работаем</h2>
+        </div>
+        <div class="steps__grid">
+            <div class="step fade-up">
+                <div class="step__num">01</div>
+                <h3 class="step__title">Заявка</h3>
+                <p class="step__text">Вы оставляете заявку — мы перезваниваем за 15 минут и разбираемся в вашей задаче</p>
+            </div>
+            <div class="step fade-up">
+                <div class="step__num">02</div>
+                <h3 class="step__title">Демо за 24 часа</h3>
+                <p class="step__text">Показываем рабочий прототип решения конкретно для вашего бизнеса — бесплатно</p>
+            </div>
+            <div class="step fade-up">
+                <div class="step__num">03</div>
+                <h3 class="step__title">Запуск за 3 дня</h3>
+                <p class="step__text">Дорабатываем под ваши пожелания, подключаем оплату и запускаем</p>
+            </div>
+            <div class="step fade-up">
+                <div class="step__num">04</div>
+                <h3 class="step__title">Поддержка</h3>
+                <p class="step__text">Остаёмся на связи — доработки, аналитика, масштабирование вашего решения</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- PORTFOLIO -->
+<section class="portfolio" id="portfolio">
+    <div class="container">
+        <div class="section-header fade-up">
+            <span class="section-tag section-tag--warm">Результаты</span>
+            <h2 class="section-title">Кейсы</h2>
+            <p class="section-desc">Реальные проекты — реальные цифры</p>
+        </div>
+        <div class="portfolio__grid">
+            <div class="case-card fade-up">
+                <div class="case-card__tag">Telegram-бот</div>
+                <h3 class="case-card__title">Бот записи для сети салонов красоты</h3>
+                <p class="case-card__text">Автоматизировали запись клиентов на 4 мастеров. Бот сам напоминает о визите, собирает отзывы и возвращает клиентов.</p>
+                <div class="case-card__results">
+                    <div class="case-card__metric">
+                        <span class="case-card__metric-num gradient-text">-70%</span>
+                        <span class="case-card__metric-label">Нагрузка на администратора</span>
+                    </div>
+                    <div class="case-card__metric">
+                        <span class="case-card__metric-num gradient-text">+35%</span>
+                        <span class="case-card__metric-label">Повторные записи</span>
+                    </div>
+                </div>
+            </div>
+            <div class="case-card fade-up">
+                <div class="case-card__tag">Лендинг + бот</div>
+                <h3 class="case-card__title">Сайт и бот заказов для кондитерской</h3>
+                <p class="case-card__text">Сделали продающий лендинг и Telegram-бот с каталогом тортов, корзиной и онлайн-оплатой.</p>
+                <div class="case-card__results">
+                    <div class="case-card__metric">
+                        <span class="case-card__metric-num gradient-text">x3</span>
+                        <span class="case-card__metric-label">Рост заказов за месяц</span>
+                    </div>
+                    <div class="case-card__metric">
+                        <span class="case-card__metric-num gradient-text">5 дней</span>
+                        <span class="case-card__metric-label">Срок разработки</span>
+                    </div>
+                </div>
+            </div>
+            <div class="case-card fade-up">
+                <div class="case-card__tag">AI-бот</div>
+                <h3 class="case-card__title">AI-консультант для стоматологии</h3>
+                <p class="case-card__text">Бот отвечает на вопросы пациентов 24/7, записывает на приём, рассказывает об услугах и ценах.</p>
+                <div class="case-card__results">
+                    <div class="case-card__metric">
+                        <span class="case-card__metric-num gradient-text">80%</span>
+                        <span class="case-card__metric-label">Обращений без участия человека</span>
+                    </div>
+                    <div class="case-card__metric">
+                        <span class="case-card__metric-num gradient-text">-50%</span>
+                        <span class="case-card__metric-label">Неявки на приём</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- PRICING -->
+<section class="pricing" id="pricing">
+    <div class="container">
+        <div class="section-header fade-up">
+            <span class="section-tag section-tag--violet">Тарифы</span>
+            <h2 class="section-title">Стоимость</h2>
+            <p class="section-desc">Прозрачные цены — без скрытых платежей</p>
+        </div>
+        <div class="pricing__grid">
+            <div class="price-card fade-up">
+                <div class="price-card__header">
+                    <h3 class="price-card__name">Старт</h3>
+                    <p class="price-card__desc">Для тех, кто хочет попробовать</p>
+                </div>
+                <div class="price-card__price">
+                    <span class="price-card__amount">15 000</span>
+                    <span class="price-card__currency">₽</span>
+                </div>
+                <ul class="price-card__features">
+                    <li class="price-card__feature">Telegram-бот записи или заказов</li>
+                    <li class="price-card__feature">До 5 разделов меню</li>
+                    <li class="price-card__feature">Уведомления администратору</li>
+                    <li class="price-card__feature">Запуск за 3 дня</li>
+                    <li class="price-card__feature">14 дней поддержки</li>
+                </ul>
+                <a href="#contact" class="btn btn--full btn--outline">Выбрать</a>
+            </div>
+            <div class="price-card price-card--accent fade-up">
+                <div class="price-card__badge">Хит продаж</div>
+                <div class="price-card__header">
+                    <h3 class="price-card__name">Бизнес</h3>
+                    <p class="price-card__desc">Полноценное решение</p>
+                </div>
+                <div class="price-card__price">
+                    <span class="price-card__amount">35 000</span>
+                    <span class="price-card__currency">₽</span>
+                </div>
+                <ul class="price-card__features">
+                    <li class="price-card__feature">Лендинг + Telegram-бот</li>
+                    <li class="price-card__feature">Каталог, корзина, оплата</li>
+                    <li class="price-card__feature">CRM-интеграция</li>
+                    <li class="price-card__feature">Аналитика и рассылки</li>
+                    <li class="price-card__feature">30 дней поддержки</li>
+                </ul>
+                <a href="#contact" class="btn btn--accent btn--full">Выбрать</a>
+            </div>
+            <div class="price-card fade-up">
+                <div class="price-card__header">
+                    <h3 class="price-card__name">Премиум</h3>
+                    <p class="price-card__desc">Максимальная автоматизация</p>
+                </div>
+                <div class="price-card__price">
+                    <span class="price-card__amount">70 000</span>
+                    <span class="price-card__currency">₽</span>
+                </div>
+                <ul class="price-card__features">
+                    <li class="price-card__feature">Всё из тарифа «Бизнес»</li>
+                    <li class="price-card__feature">AI-чат-бот с обучением</li>
+                    <li class="price-card__feature">Telegram Mini App</li>
+                    <li class="price-card__feature">Интеграция с 1С / CRM</li>
+                    <li class="price-card__feature">90 дней поддержки</li>
+                </ul>
+                <a href="#contact" class="btn btn--full btn--outline">Выбрать</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- REVIEWS -->
+<section class="reviews">
+    <div class="container">
+        <div class="section-header fade-up">
+            <span class="section-tag section-tag--warm">Отзывы</span>
+            <h2 class="section-title">Что говорят клиенты</h2>
+        </div>
+        <div class="reviews__grid">
+            <div class="review-card fade-up">
+                <div class="review-card__stars">★★★★★</div>
+                <p class="review-card__text">«Бот записи окупился за первую неделю. Теперь клиенты записываются сами, а администратор занимается другими делами.»</p>
+                <div class="review-card__author">
+                    <div class="review-card__avatar">АК</div>
+                    <div><strong>Анна К.</strong><br><span>Салон красоты «Bloom»</span></div>
+                </div>
+            </div>
+            <div class="review-card fade-up">
+                <div class="review-card__stars">★★★★★</div>
+                <p class="review-card__text">«Заказали лендинг и бота для доставки. Сделали за 5 дней — быстрее, чем мы ожидали. Заказы пошли сразу.»</p>
+                <div class="review-card__author">
+                    <div class="review-card__avatar">ДМ</div>
+                    <div><strong>Дмитрий М.</strong><br><span>Пекарня «Хлебное место»</span></div>
+                </div>
+            </div>
+            <div class="review-card fade-up">
+                <div class="review-card__stars">★★★★★</div>
+                <p class="review-card__text">«AI-бот отвечает на 80% вопросов пациентов без нас. Это как ещё один администратор, только работает круглосуточно.»</p>
+                <div class="review-card__author">
+                    <div class="review-card__avatar">ИС</div>
+                    <div><strong>Игорь С.</strong><br><span>Стоматология «DentPro»</span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq" id="faq">
+    <div class="container">
+        <div class="section-header fade-up">
+            <span class="section-tag section-tag--cool">Вопросы</span>
+            <h2 class="section-title">Частые вопросы</h2>
+        </div>
+        <div class="faq__list">
+            <div class="faq__item fade-up">
+                <button class="faq__question">Сколько времени занимает разработка?<span class="faq__icon">+</span></button>
+                <div class="faq__answer"><p>Простой Telegram-бот — 2-3 дня. Лендинг — 3-5 дней. Комплексное решение (сайт + бот + интеграции) — 7-14 дней. Мы работаем быстро, потому что используем проверенные решения и собственные наработки.</p></div>
+            </div>
+            <div class="faq__item fade-up">
+                <button class="faq__question">Что входит в стоимость?<span class="faq__icon">+</span></button>
+                <div class="faq__answer"><p>Разработка, настройка, тестирование, запуск и период бесплатной поддержки. Никаких скрытых платежей. Хостинг бота — бесплатно на наших серверах в период поддержки.</p></div>
+            </div>
+            <div class="faq__item fade-up">
+                <button class="faq__question">Можно увидеть демо перед оплатой?<span class="faq__icon">+</span></button>
+                <div class="faq__answer"><p>Да! Мы делаем рабочий демо-прототип конкретно для вашего бизнеса за 24 часа — бесплатно. Вы увидите, как это будет работать, до того как заплатите.</p></div>
+            </div>
+            <div class="faq__item fade-up">
+                <button class="faq__question">Что будет после окончания поддержки?<span class="faq__icon">+</span></button>
+                <div class="faq__answer"><p>Бот и сайт продолжают работать. Вы можете продлить поддержку за 3 000-5 000 ₽/мес или обращаться за разовыми доработками. Исходный код — ваш.</p></div>
+            </div>
+            <div class="faq__item fade-up">
+                <button class="faq__question">Работаете только по Ростову?<span class="faq__icon">+</span></button>
+                <div class="faq__answer"><p>Мы базируемся в Ростове-на-Дону, но работаем удалённо с клиентами из любого города России. Telegram-бот не привязан к географии.</p></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA + CONTACT -->
+<section class="contact" id="contact">
+    <div class="container">
+        <div class="section-header fade-up" style="margin-bottom:48px">
+            <span class="section-tag section-tag--warm">Начнём?</span>
+            <h2 class="section-title">Получите демо за <span class="gradient-text">24 часа</span></h2>
+            <p class="section-desc" style="color:rgba(255,255,255,.5)">Оставьте заявку — мы свяжемся за 15 минут и покажем рабочий прототип для вашего бизнеса. Бесплатно.</p>
+        </div>
+        <div class="contact__inner">
+            <div class="contact__info">
+                <div class="contact__channels">
+                    <a href="https://t.me/maxcode_bot" class="contact__channel">
+                        <svg viewBox="0 0 24 24" fill="currentColor" width="22"><path d="M12 0C5.37 0 0 5.37 0 12s5.37 12 12 12 12-5.37 12-12S18.63 0 12 0zm5.95 7.47l-2.06 9.73c-.15.69-.56.86-1.13.54l-3.12-2.3-1.51 1.45c-.17.17-.31.31-.63.31l.22-3.17 5.78-5.22c.25-.22-.05-.35-.39-.13l-7.15 4.5-3.07-.96c-.67-.21-.68-.67.14-.99l12-4.63c.56-.2 1.04.14.86.97z"/></svg>
+                        Написать в Telegram
+                    </a>
+                    <a href="tel:+79001234567" class="contact__channel">
+                        <svg viewBox="0 0 24 24" fill="currentColor" width="22"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24 11.36 11.36 0 003.58.57 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1 11.36 11.36 0 00.57 3.57 1 1 0 01-.25 1.02l-2.2 2.2z"/></svg>
+                        Позвонить
+                    </a>
+                    <a href="https://wa.me/79001234567" class="contact__channel">
+                        <svg viewBox="0 0 24 24" fill="currentColor" width="22"><path d="M12 0C5.37 0 0 5.37 0 12s5.37 12 12 12 12-5.37 12-12S18.63 0 12 0zm.14 4.15a7.85 7.85 0 016.78 11.86l.45 1.65-1.72-.45A7.85 7.85 0 1112.14 4.15zm-3.3 4.65c.16 0 .33 0 .47.02.16.03.37.06.57.44.24.44.76 1.87.83 2 .07.14.11.3.02.47-.09.18-.14.29-.27.44-.14.16-.29.35-.41.47-.14.14-.28.29-.12.57.16.28.72 1.19 1.55 1.93 1.06.95 1.96 1.24 2.24 1.38.27.14.44.12.6-.07.16-.19.7-.81.89-1.09.19-.28.37-.23.63-.14.25.1 1.61.76 1.89.9.27.14.46.21.52.32.07.11.07.67-.15 1.31-.23.64-1.31 1.23-1.81 1.31-.5.07-.97.15-3.11-.65a11.47 11.47 0 01-4.85-4.28c-.51-.68-1.07-1.82-.57-2.76.16-.3.49-.46.49-.46s.33-.37.49-.28z"/></svg>
+                        WhatsApp
+                    </a>
+                </div>
+            </div>
+            <form class="contact__form" id="contactForm">
+                <div class="form__group">
+                    <input type="text" name="name" placeholder="Ваше имя" required class="form__input">
+                </div>
+                <div class="form__group">
+                    <input type="tel" name="phone" placeholder="Телефон" required class="form__input">
+                </div>
+                <div class="form__group">
+                    <select name="service" class="form__input form__select">
+                        <option value="" disabled selected>Что вас интересует?</option>
+                        <option value="bot">Telegram-бот</option>
+                        <option value="site">Сайт / лендинг</option>
+                        <option value="ai">AI-решение</option>
+                        <option value="auto">Автоматизация</option>
+                        <option value="complex">Комплексное решение</option>
+                    </select>
+                </div>
+                <div class="form__group">
+                    <textarea name="message" placeholder="Расскажите кратко о задаче..." rows="3" class="form__input form__textarea"></textarea>
+                </div>
+                <button type="submit" class="btn btn--accent btn--full btn--lg">Получить демо бесплатно</button>
+                <p class="form__note">Нажимая кнопку, вы соглашаетесь с обработкой персональных данных</p>
+            </form>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="container footer__inner">
+        <div class="footer__left">
+            <a href="#" class="nav__logo" style="color:#fff">
+                <span class="nav__logo-bracket">&lt;</span>Max<span class="nav__logo-accent">Code</span><span class="nav__logo-bracket">/&gt;</span>
+            </a>
+            <p class="footer__copy">Цифровые решения для бизнеса<br>Ростов-на-Дону, 2026</p>
+        </div>
+        <div class="footer__links">
+            <a href="#services">Услуги</a>
+            <a href="#portfolio">Кейсы</a>
+            <a href="#pricing">Тарифы</a>
+            <a href="#contact">Контакты</a>
+        </div>
+        <div class="footer__socials">
+            <a href="https://t.me/maxcode_bot" aria-label="Telegram">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="24"><path d="M12 0C5.37 0 0 5.37 0 12s5.37 12 12 12 12-5.37 12-12S18.63 0 12 0zm5.95 7.47l-2.06 9.73c-.15.69-.56.86-1.13.54l-3.12-2.3-1.51 1.45c-.17.17-.31.31-.63.31l.22-3.17 5.78-5.22c.25-.22-.05-.35-.39-.13l-7.15 4.5-3.07-.96c-.67-.21-.68-.67.14-.99l12-4.63c.56-.2 1.04.14.86.97z"/></svg>
+            </a>
+        </div>
+    </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
